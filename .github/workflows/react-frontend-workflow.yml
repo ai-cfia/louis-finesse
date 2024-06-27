@@ -21,8 +21,8 @@ jobs:
     uses: ai-cfia/github-workflows/.github/workflows/workflow-repo-standards-validation.yml@main
     secrets: inherit
 
-  build-and-push-gcr:
-    uses: ai-cfia/github-workflows/.github/workflows/workflow-build-push-container-github-registry.yml@63-as-a-devops-i-would-like-to-create-a-workflow-to-push-images-to-this-organisation-docker-registry
+  build-and-push-ghcr:
+    uses: ai-cfia/github-workflows/.github/workflows/workflow-build-push-container-github-registry.yml@main
     with:
       container-name: ${{ github.event.repository.name }}
       tag: ${{ github.sha }}
