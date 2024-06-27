@@ -84,6 +84,9 @@ export const InputWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-left: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 `;
 
 export const ResultList = styled.div`
